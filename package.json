@@ -1,0 +1,28 @@
+{
+  "name": "team-html-page-generator",
+  "version": "1.0.0",
+  "description": "A node application generating HTML for a team of engineers and interns",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/harrygarstang/Team-Management"
+  },
+  "keywords": [
+    "Harry",
+    "Garstang"
+  ],
+  "author": "MIT",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  },
+  "dependencies": {
+    "inquirer": "^6.5.0"
+  }
+}
