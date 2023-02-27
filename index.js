@@ -41,23 +41,23 @@ inquirer.prompt([{
 
 const promptForNextEmployee = () => {
     inquirer.prompt([{
-        // choice of 3
-        type: "list",
-        message: "Do you want to choose another employee?",
-        name: "newChoice",
-        choices: ["Add an engineer", "Add an intern", "Finish building the team"],
+      // choice of 3
+      type: "list",
+      message: "Do you want to choose another employee?",
+      name: "newChoice",
+      choices: ["Add an engineer", "Add an intern", "Finish building the team"],
     }]).then(response => {
-        if (`${response.choices[0]}`) {
-            promptForEngineer()
-        }
-        if (`${response.choices[1]}`) {
-            promptForIntern()
-        }
-        else {
-            buildPage()
-        }
-    })
-}
+      if (response.newChoice === "Add an engineer") {
+        promptForEngineer();
+      }
+      else if (response.newChoice === "Add an intern") {
+        promptForIntern();
+      }
+      else {
+        buildPage();
+      }
+    });
+  }
 
 //    use the functionality from page-template to generate the team
 
