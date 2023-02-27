@@ -61,10 +61,6 @@ const promptForNextEmployee = () => {
 
 //    use the functionality from page-template to generate the team
 
-
-
-
-
 const promptForEngineer = () => {
     inquirer.prompt([{
         //engineer questions
